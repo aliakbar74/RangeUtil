@@ -32,6 +32,5 @@ void GetRange_W(WeightedRangevalue* values, const int size, const float seed, fl
 	}
 
 	std::uniform_real_distribution<float> floatDis(values[selectedId].min, values[selectedId].max);
-
 	result = floatDis(gen);
 }
