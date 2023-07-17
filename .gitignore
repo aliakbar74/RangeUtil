@@ -1,0 +1,34 @@
+# Ignore build outputs
+*.obj
+*.exe
+*.dll
+*.pdb
+*.lib
+*.ilk
+*.aps
+*.ncb
+*.suo
+*.sdf
+*.opensdf
+*.sln.docstates
+
+# Ignore intermediate directories
+Debug/
+Release/
+x64/
+x86/
+ipch/
+*.vs/
+*.vscode/
+
+# Ignore user-specific files
+*.user
+*.user.props
+*.sln.docstates
+
+# Ignore macOS-specific files
+.DS_Store
+
+# Ignore Visual Studio files
+*.VC.db
+*.VC.VC.opendb
