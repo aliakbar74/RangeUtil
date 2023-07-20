@@ -1,14 +1,14 @@
 #include "pch.h"
 #include <random>
 
-void GetRange(RangeValue range, const float seed, float& result)
+void GetRange(const RangeValue range, const float seed, float& result)
 {
 	std::mt19937 gen(seed);
 	std::uniform_real_distribution<float> dis(range.min, range.max);
 	result = dis(gen);
 }
 
-void GetRange_W(WeightedRangevalue* values, const int size, const float seed, float& result)
+void GetRange_W(const WeightedRangeValue* values, const unsigned int size, const unsigned int seed, float& result)
 {
 	int totalWeight = 0;
 
