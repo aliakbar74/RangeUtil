@@ -1,10 +1,10 @@
 #pragma once
 #include "RangeValue.h"
-struct WeightedRangevalue {
+struct WeightedRangeValue {
 	RangeValue base;
 	float& min = base.min;
 	float& max = base.max;
 	int weight;
 
-	WeightedRangevalue(const float& min, const float& max, const int& weight) :base(min, max), weight(weight) {}
+	WeightedRangeValue(const float& min, const float& max, const int& weight) :base(min, max), weight(weight) {}
 };
