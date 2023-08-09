@@ -14,7 +14,7 @@ extern "C" {
 #ifdef __cplusplus
 extern "C" {
 #endif
- __declspec(dllexport) float GetRange(const RangeValue range, const float seed);
+ __declspec(dllexport) float GetRange_R(const RangeValue range, const float seed);
 #ifdef __cplusplus
 }
 #endif
@@ -30,7 +30,7 @@ extern "C" {
 #ifdef __cplusplus
 extern "C" {
 #endif
- __declspec(dllexport) float GetRange_W(const WeightedRangeValue * values, const unsigned int size, const unsigned int seed);
+ __declspec(dllexport) float GetRange_W_R(const WeightedRangeValue * values, const unsigned int size, const unsigned int seed);
 #ifdef __cplusplus
 }
 #endif
